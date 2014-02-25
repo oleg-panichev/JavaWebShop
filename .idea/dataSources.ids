@@ -16,6 +16,13 @@
     <schema name="SYSIBM" catalog=""/>
     <schema name="SYSPROC" catalog=""/>
     <schema name="SYSSTAT" catalog=""/>
+    <table name="ORDERS" schema="APP" catalog="" type="TABLE">
+      <column name="ORDERID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="ITEMNAME" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="PRICE" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="USERNAME" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="SQL140225234939460" columns="ORDERID"/>
+    </table>
     <table name="USERS" schema="APP" catalog="" type="TABLE">
       <column name="NAME" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
       <column name="PASSWORD" sqlType="VARCHAR" length="24" precision="0" nullable="false" jdbcType="12"/>
