@@ -26,11 +26,14 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
             out.print("<h2><font color=red>Error!</font><h2></br>Login and password cannot contain \",<,>,' symbols.");
             out.print("</body></html>");
         } else {
-            String workingDir = System.getProperty("user.dir");
+            String workingDir = "D:\\Dropbox\\Java\\JavaWebShop\\db";
             Connection con= null;
             try {
-                con = DriverManager.getConnection("jdbc:derby:" + workingDir);
+                con = DriverManager.getConnection("jdbc:derby:"+workingDir);
             } catch (SQLException e) {
+                out.print("<html><head><title>Error</title><body>");
+                out.print("<h2><font color=red>Error!</font><h2></br>jdbc:derby:" + workingDir);
+                out.print("</body></html>");
                 e.printStackTrace();
             }
             UsersDAODb uDao=new UsersDAODb(con);
@@ -45,6 +48,11 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
             } else {
                 if (u.checkPass(pass))
                     out.print("<html><head><title>Login</title><body>Login good</body></html>");
+            }
+            try {
+                con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
         }
     }

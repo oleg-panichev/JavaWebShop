@@ -18,7 +18,7 @@ public class UsersDAODb {
 
     public boolean addUser(String name, String pass) {
         try {
-            stmt=con.prepareStatement("INSERT INTO users (name,password)" +
+            stmt=con.prepareStatement("INSERT INTO users (login,password)" +
                     "VALUES (?,?)");
             stmt.setString(1,name);
             stmt.setString(2,pass);
@@ -47,7 +47,7 @@ public class UsersDAODb {
     public User findUser(String name) {
         User u=null;
         try {
-            stmt=con.prepareStatement("SELECT name,password FROM users WHERE name=?");
+            stmt=con.prepareStatement("SELECT login,password FROM users WHERE login=?");
             stmt.setString(1,name);
             ResultSet rs=stmt.executeQuery();
             while(rs.next()) {
@@ -62,7 +62,7 @@ public class UsersDAODb {
     public boolean checkPass(String name, String pass) {
         boolean result=false;
         try {
-            stmt=con.prepareStatement("SELECT name,password FROM users WHERE name=?");
+            stmt=con.prepareStatement("SELECT login,password FROM users WHERE login=?");
             stmt.setString(1,name);
             ResultSet rs=stmt.executeQuery();
             while(rs.next()) {
