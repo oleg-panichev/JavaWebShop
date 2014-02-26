@@ -7,9 +7,19 @@ import java.util.List;
  * Created by Oleg on 25.02.14.
  */
 public class User {
-    Integer userId;
-    String name;
-    String pass;
+    private String login;
+    private String pass;
     List<Order> orders=new ArrayList<>();
 
+    public User(String login, String pass) {
+        this.login=login;
+        this.pass=pass;
+    }
+
+    public boolean checkPass(String pass) {
+        if (this.pass==pass)
+            return true;
+        else
+            return false;
+    }
 }

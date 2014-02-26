@@ -24,7 +24,7 @@
       <primary-key name="SQL140225234939460" columns="ORDERID"/>
     </table>
     <table name="USERS" schema="APP" catalog="" type="TABLE">
-      <column name="NAME" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="LOGIN" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
       <column name="PASSWORD" sqlType="VARCHAR" length="24" precision="0" nullable="false" jdbcType="12"/>
     </table>
     <table name="SYSALIASES" schema="SYS" catalog="" type="SYSTEM TABLE">

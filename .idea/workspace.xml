@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e391a02b-32a7-4a93-9656-0d45c7b03741" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webshop/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -81,7 +83,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
+            <state line="5" column="7" selection-start="103" selection-end="103" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
@@ -99,7 +101,7 @@
       <file leaf-file-name="LoginServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="5" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="510">
+            <state line="33" column="36" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
@@ -108,12 +110,14 @@
       <file leaf-file-name="UsersDAODb.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="18" selection-start="978" selection-end="978" vertical-scroll-proportion="0.8540773" vertical-offset="214" max-vertical-offset="833">
+            <state line="51" column="45" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.5105263" vertical-offset="673" max-vertical-offset="1394">
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1393369042893" expanded="true" signature="451:521" placeholder="INSERT INTO ..." />
-                <marker date="1393369042893" expanded="true" signature="830:875" placeholder="SELECT name,..users..." />
-                <marker date="1393369042893" expanded="true" signature="830:874" placeholder="SELECT name,..users..." />
+                <marker date="1393372709863" expanded="true" signature="451:521" placeholder="INSERT INTO ..." />
+                <marker date="1393372709863" expanded="true" signature="862:907" placeholder="SELECT name,..users..." />
+                <marker date="1393372709863" expanded="true" signature="862:906" placeholder="SELECT name,..users..." />
+                <marker date="1393372709863" expanded="true" signature="1316:1360" placeholder="SELECT name,..users..." />
+                <marker date="1393372709863" expanded="true" signature="1835:1879" placeholder="SELECT name,..users..." />
               </folding>
             </state>
           </provider>
@@ -122,7 +126,7 @@
       <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+            <state line="22" column="25" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,10 +185,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webshop/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webshop/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java" />
       </list>
     </option>
   </component>
@@ -374,7 +378,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
+  <component name="RunManager" selected="Tomcat Server.index.jsp">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -603,7 +607,7 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.50" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+    <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.50" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="JavaWebShop:war exploded">
@@ -680,7 +684,7 @@
       </method>
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -711,26 +715,30 @@
       <created>1393356694870</created>
       <updated>1393356694870</updated>
       <workItem from="1393356700003" duration="5808000" />
-      <workItem from="1393362790842" duration="5613000" />
+      <workItem from="1393362790842" duration="9336000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1393364208801</created>
       <updated>1393364208801</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit&#10;">
+      <created>1393369051874</created>
+      <updated>1393369051874</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11421000" />
+    <option name="totallyTimeSpent" value="15144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.176565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.176565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21676737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21676737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -741,7 +749,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17749244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54414123" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31460676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -862,16 +870,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
+        <state line="10" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+        <state line="5" column="7" selection-start="103" selection-end="103" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="42" selection-start="651" selection-end="651" vertical-scroll-proportion="-10.384615" vertical-offset="138" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
@@ -883,35 +898,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="510">
+        <state line="33" column="36" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+        <state line="22" column="25" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="42" selection-start="651" selection-end="651" vertical-scroll-proportion="-10.384615" vertical-offset="138" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="18" selection-start="978" selection-end="978" vertical-scroll-proportion="0.8540773" vertical-offset="214" max-vertical-offset="833">
+        <state line="51" column="45" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.5105263" vertical-offset="673" max-vertical-offset="1394">
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1393369042893" expanded="true" signature="451:521" placeholder="INSERT INTO ..." />
-            <marker date="1393369042893" expanded="true" signature="830:875" placeholder="SELECT name,..users..." />
-            <marker date="1393369042893" expanded="true" signature="830:874" placeholder="SELECT name,..users..." />
+            <marker date="1393372709863" expanded="true" signature="451:521" placeholder="INSERT INTO ..." />
+            <marker date="1393372709863" expanded="true" signature="862:907" placeholder="SELECT name,..users..." />
+            <marker date="1393372709863" expanded="true" signature="862:906" placeholder="SELECT name,..users..." />
+            <marker date="1393372709863" expanded="true" signature="1316:1360" placeholder="SELECT name,..users..." />
+            <marker date="1393372709863" expanded="true" signature="1835:1879" placeholder="SELECT name,..users..." />
           </folding>
         </state>
       </provider>

@@ -6,6 +6,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  * Created by Oleg on 25.02.14.
@@ -23,7 +26,26 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
             out.print("<h2><font color=red>Error!</font><h2></br>Login and password cannot contain \",<,>,' symbols.");
             out.print("</body></html>");
         } else {
-            out.print("<html><head><title>Login</title><body>Login good</body></html>");
+            String workingDir = System.getProperty("user.dir");
+            Connection con= null;
+            try {
+                con = DriverManager.getConnection("jdbc:derby:" + workingDir);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            UsersDAODb uDao=new UsersDAODb(con);
+            User u=uDao.findUser(login);
+            if (u==null) {
+                if (pass.length()>3) {
+                    uDao.addUser(login,pass);
+                    out.print("<html><head><title>Login</title><body>Login good</body></html>");
+                } else {
+
+                }
+            } else {
+                if (u.checkPass(pass))
+                    out.print("<html><head><title>Login</title><body>Login good</body></html>");
+            }
         }
     }
 }

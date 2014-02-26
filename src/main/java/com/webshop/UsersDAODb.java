@@ -29,15 +29,48 @@ public class UsersDAODb {
         }
     }
 
-    public boolean findUser(String name) {
+    /*public boolean findUser(String name) {
+        boolean result=false;
         try {
             stmt=con.prepareStatement("SELECT name,password FROM users WHERE name=?");
             stmt.setString(1,name);
-            ResultSet Rs=stmt.executeQuery();
-            while()
-            return true;
+            ResultSet rs=stmt.executeQuery();
+            while(rs.next()) {
+                if (rs.getString("name").equals(name))
+                    result=true;
+            }
         } catch (SQLException e) {
-            return false;
         }
+        return result;
+    }*/
+
+    public User findUser(String name) {
+        User u=null;
+        try {
+            stmt=con.prepareStatement("SELECT name,password FROM users WHERE name=?");
+            stmt.setString(1,name);
+            ResultSet rs=stmt.executeQuery();
+            while(rs.next()) {
+                if (rs.getString("name").equals(name))
+                    u=new User(rs.getString("name"),rs.getString("password"));
+            }
+        } catch (SQLException e) {
+        }
+        return u;
+    }
+
+    public boolean checkPass(String name, String pass) {
+        boolean result=false;
+        try {
+            stmt=con.prepareStatement("SELECT name,password FROM users WHERE name=?");
+            stmt.setString(1,name);
+            ResultSet rs=stmt.executeQuery();
+            while(rs.next()) {
+                if (rs.getString("name").equals(name) && rs.getString("password").equals(pass))
+                    result=true;
+            }
+        } catch (SQLException e) {
+        }
+        return result;
     }
 }
