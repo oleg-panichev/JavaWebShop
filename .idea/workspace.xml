@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e391a02b-32a7-4a93-9656-0d45c7b03741" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c101.dat" afterPath="$PROJECT_DIR$/db/seg0/c101.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c111.dat" afterPath="$PROJECT_DIR$/db/seg0/c111.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c121.dat" afterPath="$PROJECT_DIR$/db/seg0/c121.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c130.dat" afterPath="$PROJECT_DIR$/db/seg0/c130.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c141.dat" afterPath="$PROJECT_DIR$/db/seg0/c141.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c150.dat" afterPath="$PROJECT_DIR$/db/seg0/c150.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c161.dat" afterPath="$PROJECT_DIR$/db/seg0/c161.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c171.dat" afterPath="$PROJECT_DIR$/db/seg0/c171.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c20.dat" afterPath="$PROJECT_DIR$/db/seg0/c20.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c230.dat" afterPath="$PROJECT_DIR$/db/seg0/c230.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c31.dat" afterPath="$PROJECT_DIR$/db/seg0/c31.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c41.dat" afterPath="$PROJECT_DIR$/db/seg0/c41.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c490.dat" afterPath="$PROJECT_DIR$/db/seg0/c490.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c4a1.dat" afterPath="$PROJECT_DIR$/db/seg0/c4a1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c51.dat" afterPath="$PROJECT_DIR$/db/seg0/c51.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c60.dat" afterPath="$PROJECT_DIR$/db/seg0/c60.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c71.dat" afterPath="$PROJECT_DIR$/db/seg0/c71.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c81.dat" afterPath="$PROJECT_DIR$/db/seg0/c81.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c90.dat" afterPath="$PROJECT_DIR$/db/seg0/c90.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/ca1.dat" afterPath="$PROJECT_DIR$/db/seg0/ca1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/cb1.dat" afterPath="$PROJECT_DIR$/db/seg0/cb1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/cf0.dat" afterPath="$PROJECT_DIR$/db/seg0/cf0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/log/log.ctrl" afterPath="$PROJECT_DIR$/db/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/log/log1.dat" afterPath="$PROJECT_DIR$/db/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaWebShop.iml" afterPath="$PROJECT_DIR$/JavaWebShop.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/db/log/logmirror.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/db.lck" afterPath="$PROJECT_DIR$/db/db.lck" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaWebShop.iws" />
@@ -97,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServlet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="16" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.505988" vertical-offset="290" max-vertical-offset="1105">
+            <state line="21" column="34" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1292">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,7 +135,7 @@
       <file leaf-file-name="UsersDAODb.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="63" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1343">
+            <state line="49" column="33" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="1343">
               <folding>
                 <marker date="1393373384461" expanded="true" signature="451:522" placeholder="INSERT INTO ..." />
                 <marker date="1393373384461" expanded="true" signature="863:908" placeholder="SELECT name,..users..." />
@@ -135,16 +159,16 @@
       <file leaf-file-name="Order.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+            <state line="10" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="357">
+            <state line="12" column="41" selection-start="460" selection-end="460" vertical-scroll-proportion="0.47113165" vertical-offset="0" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -174,12 +198,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -373,11 +397,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.7.0_45/db/lib/derby.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson4" />
     <property name="options.lastSelected" value="database.main" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Tomcat Server.index.jsp">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -717,7 +742,9 @@
       <updated>1393356694870</updated>
       <workItem from="1393356700003" duration="5808000" />
       <workItem from="1393362790842" duration="9626000" />
-      <workItem from="1393373264471" duration="2077000" />
+      <workItem from="1393373264471" duration="2139000" />
+      <workItem from="1393411209288" duration="1307000" />
+      <workItem from="1393440981069" duration="8004000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1393364208801</created>
@@ -731,11 +758,15 @@
       <created>1393372969866</created>
       <updated>1393372969866</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit&#10;">
+      <created>1393376118718</created>
+      <updated>1393376118718</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17511000" />
+    <option name="totallyTimeSpent" value="26884000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -759,12 +790,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.176565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21676737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14048338" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -775,7 +806,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17673716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36757624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2295345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -817,6 +848,148 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="7" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="42" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="42" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="1105">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="63" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1394">
+          <folding>
+            <marker date="1393373384461" expanded="true" signature="451:522" placeholder="INSERT INTO ..." />
+            <marker date="1393373384461" expanded="true" signature="863:908" placeholder="SELECT name,..users..." />
+            <marker date="1393373384461" expanded="true" signature="863:907" placeholder="SELECT name,..users..." />
+            <marker date="1393373384461" expanded="true" signature="1317:1363" placeholder="SELECT login..users..." />
+            <marker date="1393373384461" expanded="true" signature="1838:1884" placeholder="SELECT login..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaWebShop.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="7" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="42" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="42" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="1105">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="63" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1394">
+          <folding>
+            <marker date="1393373384461" expanded="true" signature="451:522" placeholder="INSERT INTO ..." />
+            <marker date="1393373384461" expanded="true" signature="863:908" placeholder="SELECT name,..users..." />
+            <marker date="1393373384461" expanded="true" signature="863:907" placeholder="SELECT name,..users..." />
+            <marker date="1393373384461" expanded="true" signature="1317:1363" placeholder="SELECT login..users..." />
+            <marker date="1393373384461" expanded="true" signature="1838:1884" placeholder="SELECT login..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaWebShop.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="16" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="561">
@@ -974,13 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/6bc08954/e0617a40-8e81-4c01-bed6-4dca43778c7e/.APP.USERS">
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
@@ -998,9 +1164,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/UsersDAODb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="63" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1343">
+        <state line="49" column="33" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="1343">
           <folding>
             <marker date="1393373384461" expanded="true" signature="451:522" placeholder="INSERT INTO ..." />
             <marker date="1393373384461" expanded="true" signature="863:908" placeholder="SELECT name,..users..." />
@@ -1011,19 +1184,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="25" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.505988" vertical-offset="290" max-vertical-offset="1105">
+        <state line="21" column="34" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1292">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="460" selection-end="460" vertical-scroll-proportion="0.47113165" vertical-offset="0" max-vertical-offset="459">
+          <folding />
         </state>
       </provider>
     </entry>
