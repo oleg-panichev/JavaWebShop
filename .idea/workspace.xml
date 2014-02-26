@@ -2,34 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e391a02b-32a7-4a93-9656-0d45c7b03741" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c101.dat" afterPath="$PROJECT_DIR$/db/seg0/c101.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c111.dat" afterPath="$PROJECT_DIR$/db/seg0/c111.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c121.dat" afterPath="$PROJECT_DIR$/db/seg0/c121.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c130.dat" afterPath="$PROJECT_DIR$/db/seg0/c130.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c141.dat" afterPath="$PROJECT_DIR$/db/seg0/c141.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c150.dat" afterPath="$PROJECT_DIR$/db/seg0/c150.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c161.dat" afterPath="$PROJECT_DIR$/db/seg0/c161.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c171.dat" afterPath="$PROJECT_DIR$/db/seg0/c171.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c20.dat" afterPath="$PROJECT_DIR$/db/seg0/c20.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c230.dat" afterPath="$PROJECT_DIR$/db/seg0/c230.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c31.dat" afterPath="$PROJECT_DIR$/db/seg0/c31.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c41.dat" afterPath="$PROJECT_DIR$/db/seg0/c41.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c490.dat" afterPath="$PROJECT_DIR$/db/seg0/c490.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c4a1.dat" afterPath="$PROJECT_DIR$/db/seg0/c4a1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c51.dat" afterPath="$PROJECT_DIR$/db/seg0/c51.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c60.dat" afterPath="$PROJECT_DIR$/db/seg0/c60.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c71.dat" afterPath="$PROJECT_DIR$/db/seg0/c71.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c81.dat" afterPath="$PROJECT_DIR$/db/seg0/c81.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/c90.dat" afterPath="$PROJECT_DIR$/db/seg0/c90.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/ca1.dat" afterPath="$PROJECT_DIR$/db/seg0/ca1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/cb1.dat" afterPath="$PROJECT_DIR$/db/seg0/cb1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seg0/cf0.dat" afterPath="$PROJECT_DIR$/db/seg0/cf0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/log/log.ctrl" afterPath="$PROJECT_DIR$/db/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/log/log1.dat" afterPath="$PROJECT_DIR$/db/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/db/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/db.lck" afterPath="$PROJECT_DIR$/db/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaWebShop.iws" />
@@ -168,7 +140,7 @@
       <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="460" selection-end="460" vertical-scroll-proportion="0.47113165" vertical-offset="0" max-vertical-offset="459">
+            <state line="3" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.063725494" vertical-offset="25" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -744,7 +716,7 @@
       <workItem from="1393362790842" duration="9626000" />
       <workItem from="1393373264471" duration="2139000" />
       <workItem from="1393411209288" duration="1307000" />
-      <workItem from="1393440981069" duration="8004000" />
+      <workItem from="1393440981069" duration="8138000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1393364208801</created>
@@ -762,11 +734,15 @@
       <created>1393376118718</created>
       <updated>1393376118718</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial commit&#10;">
+      <created>1393452285490</created>
+      <updated>1393452285490</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26884000" />
+    <option name="totallyTimeSpent" value="27018000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1195,7 +1171,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="460" selection-end="460" vertical-scroll-proportion="0.47113165" vertical-offset="0" max-vertical-offset="459">
+        <state line="3" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.063725494" vertical-offset="25" max-vertical-offset="459">
           <folding />
         </state>
       </provider>
