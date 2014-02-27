@@ -51,8 +51,8 @@ public class UsersDAODb {
             stmt.setString(1,name);
             ResultSet rs=stmt.executeQuery();
             while(rs.next()) {
-                if (rs.getString("name").equals(name))
-                    u=new User(rs.getString("name"),rs.getString("password"));
+                if (rs.getString("login").equals(name))
+                    u=new User(rs.getString("login"),rs.getString("password"));
             }
         } catch (SQLException e) {
         }
