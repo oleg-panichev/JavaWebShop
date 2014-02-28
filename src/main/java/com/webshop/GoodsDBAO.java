@@ -20,7 +20,7 @@ public class GoodsDBAO {
     public List<Item> getAllGoods() {
         List<Item> itemList=new ArrayList<Item>();
         try {
-            PreparedStatement stmt=con.prepareStatement("SELECT (itemname,itemprice) FROM goods");
+            PreparedStatement stmt=con.prepareStatement("SELECT itemname,itemprice FROM goods");
             ResultSet rs=stmt.executeQuery();
             while(rs.next()) {
                 itemList.add(new Item(rs.getString("itemname"),rs.getInt("itemprice")));

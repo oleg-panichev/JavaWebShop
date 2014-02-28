@@ -8,11 +8,11 @@ import java.sql.SQLException;
 /**
  * Created by Oleg on 26.02.14.
  */
-public class UsersDAODb {
+public class UsersDBAO {
     private Connection con;
     private PreparedStatement stmt;
 
-    public UsersDAODb(Connection con) {
+    public UsersDBAO(Connection con) {
         this.con=con;
     }
 

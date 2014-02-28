@@ -13,7 +13,7 @@ public class Item {
     }
 
     public String prepareDataForWebTable() {
-        return ("<tr><td>"+itemName+"</td><td>"+itemPrice+"</td></tr>");
+        return ("<td>"+itemName+"</td><td>"+itemPrice+"</td>");
     }
 
 }

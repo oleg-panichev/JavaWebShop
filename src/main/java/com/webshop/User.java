@@ -16,6 +16,10 @@ public class User {
         this.pass=pass;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
     public boolean checkPass(String pass) {
         if (this.pass.equals(pass))
             return true;

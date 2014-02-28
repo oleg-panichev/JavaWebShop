@@ -1,11 +1,9 @@
 package com.webshop;
 
-import org.apache.derby.iapi.store.raw.Page;
-
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
@@ -42,22 +40,23 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                 out.print(PagesGenerator.getErrorPage(e.toString()));
             }
             if (con!=null) {
-                UsersDAODb uDao=new UsersDAODb(con);
+                UsersDBAO uDao=new UsersDBAO(con);
                 User u=uDao.findUser(login);
-                out.print(PagesGenerator.getPage("Empty","BlankPage"));
                 if (u==null) {
                     if (pass.length()>3) {
                         uDao.addUser(login, pass);
-                        request.getSession(true);
-                        //response.
-                        out.print("<html><head><title>Login</title><body>Login good</body></html>");
+                        u=new User(login, pass);
+                        HttpSession session = request.getSession(true);
+                        session.setAttribute("user",u);
+                        response.sendRedirect("/shop");
                     } else {
                         out.print(PagesGenerator.getErrorPage("Password cannot be less then 3 symbols!"));
                     }
                 } else {
                     if (u.checkPass(pass)) {
-                        out.print("<html><head><title>Login</title><body>Login good</body></html>");
-                        request.getSession(true);
+                        HttpSession session = request.getSession(true);
+                        session.setAttribute("user",u);
+                        response.sendRedirect("/shop");
                     } else {
                         out.print(PagesGenerator.getErrorPage("Wrong password!"));
                     }
@@ -67,8 +66,6 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-            } else {
-                out.print(PagesGenerator.getErrorPage("connection is null"));
             }
         }
     }
