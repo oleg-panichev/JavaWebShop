@@ -6,7 +6,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
@@ -21,24 +20,42 @@ public class ShopServlet extends javax.servlet.http.HttpServlet {
         PrintWriter out=response.getWriter();
         StringBuilder pageContent=new StringBuilder();
         User u=(User)request.getSession().getAttribute("user");
-        pageContent.append("Hello, "+u.getLogin()+"!<br/>");
+        pageContent.append("Hello, <b>"+u.getLogin()+"</b>! ");
+        pageContent.append("<form action=\"/index.jsp\"><input type=\"submit\" value=\"Exit\"/></form><br/>");
+
+        if (request.getParameter("itemname")!=null && request.getParameter("itemprice")!=null) {
+            u.addOrder(new Item(request.getParameter("itemname"),
+                    Integer.parseInt(request.getParameter("itemprice"))));
+            request.getSession().setAttribute("user",u);
+        }
+
+        pageContent.append("Your orders list:<br/>");
+        if(u.getNumberOfOrders()>0) {
+            pageContent.append("<ul>");
+            for(Item o:u.getOrders()) {
+                pageContent.append("<li>"+o.getItemName()+", "+o.getItemPrice()+"$</li>");
+            }
+            pageContent.append("</ul><br/>");
+        } else {
+            pageContent.append("You have no orders yet.<br/>");
+        }
 
         try {
             Connection con= DriverManager.getConnection("jdbc:derby:D:\\Dropbox\\Java\\JavaWebShop\\db");
-            pageContent.append("Our products:<br/><table border=\"1\">");
+            pageContent.append("<br/>Our products:<br/><table border=\"1\">");
             GoodsDBAO gdbao=new GoodsDBAO(con);
             List<Item> itemList=gdbao.getAllGoods();
-            pageContent.append(itemList.size()+"");
             for(Item item:itemList) {
-                pageContent.append(item.prepareDataForWebTable());
-                pageContent.append("<td><form action=\"/shop\" method=\"GET\">"+
-                        "<input type=\"submit\" value=\"Buy\"/></form></td>");
+                pageContent.append("<tr>"+item.prepareDataForWebTable());
+                pageContent.append("<td><form action=\"/shop?itemname="+item.getItemName()+
+                        "&itemprice="+item.getItemPrice()+"\" method=\"GET\">"+
+                        "<input type=\"submit\" value=\"Buy\"/></form></td></tr>");
             }
             pageContent.append("</table>");
 
         } catch (SQLException e) {
             pageContent.append("<h2><font color=red>Error</h2></font><br/>" + e.toString() + "<br/>");
         }
-        out.print(PagesGenerator.getPage("Shop",pageContent.toString()));
+        out.print(PagesGenerator.getPage("JavaWebShop",pageContent.toString()));
     }
 }

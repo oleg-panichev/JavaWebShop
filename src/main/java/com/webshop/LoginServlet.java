@@ -43,14 +43,14 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                 UsersDBAO uDao=new UsersDBAO(con);
                 User u=uDao.findUser(login);
                 if (u==null) {
-                    if (pass.length()>3) {
+                    if (pass.length()>=3) {
                         uDao.addUser(login, pass);
                         u=new User(login, pass);
                         HttpSession session = request.getSession(true);
                         session.setAttribute("user",u);
                         response.sendRedirect("/shop");
                     } else {
-                        out.print(PagesGenerator.getErrorPage("Password cannot be less then 3 symbols!"));
+                        out.print(PagesGenerator.getErrorPage("Password length cannot be less then 3 symbols!"));
                     }
                 } else {
                     if (u.checkPass(pass)) {

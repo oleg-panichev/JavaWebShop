@@ -12,6 +12,14 @@ public class Item {
         this.itemPrice=itemPrice;
     }
 
+    public String getItemName() {
+        return itemName;
+    }
+
+    public int getItemPrice() {
+        return itemPrice;
+    }
+
     public String prepareDataForWebTable() {
         return ("<td>"+itemName+"</td><td>"+itemPrice+"</td>");
     }

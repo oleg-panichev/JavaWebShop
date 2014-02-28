@@ -30,21 +30,6 @@ public class UsersDBAO {
         }
     }
 
-    /*public boolean findUser(String name) {
-        boolean result=false;
-        try {
-            stmt=con.prepareStatement("SELECT name,password FROM users WHERE name=?");
-            stmt.setString(1,name);
-            ResultSet rs=stmt.executeQuery();
-            while(rs.next()) {
-                if (rs.getString("name").equals(name))
-                    result=true;
-            }
-        } catch (SQLException e) {
-        }
-        return result;
-    }*/
-
     public User findUser(String name) {
         User u=null;
         try {
