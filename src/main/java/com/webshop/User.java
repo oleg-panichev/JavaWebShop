@@ -9,7 +9,7 @@ import java.util.List;
 public class User {
     private String login;
     private String pass;
-    List<Order> orders=new ArrayList<>();
+    List<Order> orders=new ArrayList<Order>();
 
     public User(String login, String pass) {
         this.login=login;
@@ -17,7 +17,7 @@ public class User {
     }
 
     public boolean checkPass(String pass) {
-        if (this.pass==pass)
+        if (this.pass.equals(pass))
             return true;
         else
             return false;

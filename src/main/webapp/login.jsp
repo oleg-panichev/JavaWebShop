@@ -11,6 +11,7 @@
     <title></title>
 </head>
 <body>
+    <% request.getSession(false); %>
     <form name="auth" action="/login" method="POST">
         <table>
             <tr>

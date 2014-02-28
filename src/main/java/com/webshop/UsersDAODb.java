@@ -23,6 +23,7 @@ public class UsersDAODb {
             stmt.setString(1,name);
             stmt.setString(2,pass);
             stmt.executeUpdate();
+            stmt.close();
             return true;
         } catch (SQLException e) {
             return false;
@@ -54,7 +55,9 @@ public class UsersDAODb {
                 if (rs.getString("login").equals(name))
                     u=new User(rs.getString("login"),rs.getString("password"));
             }
+            stmt.close();
         } catch (SQLException e) {
+            e.printStackTrace();
         }
         return u;
     }
@@ -69,6 +72,7 @@ public class UsersDAODb {
                 if (rs.getString("name").equals(name) && rs.getString("password").equals(pass))
                     result=true;
             }
+            stmt.close();
         } catch (SQLException e) {
         }
         return result;
