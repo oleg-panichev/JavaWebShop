@@ -1,9 +1,8 @@
-package com.webshop.webapp;
+package com.webshop.webcode;
 
-import com.webshop.User;
+import com.webshop.Client;
+import com.webshop.db.ClientDAO;
 import com.webshop.db.DAOFactory;
-import com.webshop.db.UserDAO;
-import com.webshop.db.UserDAOql;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -11,13 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.*;
 
 /**
  * Created by Oleg on 25.02.14.
  */
 public class LoginServlet extends javax.servlet.http.HttpServlet {
-    UserDAO udao = DAOFactory.getDAOFactory(DAOFactory.QL).getUserDAO();
+    ClientDAO udao = DAOFactory.getDAOFactory(DAOFactory.QL).getUserDAO();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -29,11 +27,11 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                 pass.contains("<") || pass.contains(">") || pass.contains("\"") || pass.contains("'")) {
             out.print(PagesGenerator.getErrorPage("Login and password cannot contain \",<,>,' symbols."));
         } else {
-            User u=udao.getUser(login);
+            Client u=udao.getUser(login);
             if (u==null) {
                 if (pass.length()>=3) {
-                    udao.addUser(new User(login, pass));
-                    u=new User(login, pass);
+                    udao.addUser(new Client(login, pass));
+                    u=new Client(login, pass);
                     HttpSession session = request.getSession(true);
                     session.setAttribute("user",u);
                     response.sendRedirect("/shop");

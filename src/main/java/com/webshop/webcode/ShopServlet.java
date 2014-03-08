@@ -1,21 +1,16 @@
-package com.webshop.webapp;
+package com.webshop.webcode;
 
 import com.webshop.Item;
 import com.webshop.Order;
-import com.webshop.User;
+import com.webshop.Client;
 import com.webshop.db.DAOFactory;
 import com.webshop.db.ItemDAO;
-import com.webshop.db.ItemDAOql;
-import com.webshop.db.UserDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -29,24 +24,24 @@ public class ShopServlet extends javax.servlet.http.HttpServlet {
             throws ServletException, IOException {
         PrintWriter out=response.getWriter();
         StringBuilder pageContent=new StringBuilder();
-        User u=(User)request.getSession().getAttribute("user");
-        pageContent.append("Hello, <b>"+u.getLogin()+"</b>! ");
-        pageContent.append("<form action=\"/index.jsp\"><input type=\"submit\" value=\"Exit\"/></form><br/>");
+        Client u=(Client)request.getSession().getAttribute("user");
+
+        pageContent.append("<font size=\"15\">Hello, <b>"+u.getLogin()+"</b>!</font> <a href=\"/logout\"><img src=\"btnExit.png\"></a><br><br>");
+//        pageContent.append("<form action=\"/logout\"><input type=\"submit\" value=\"Exit\"/></form><br/>");
 
         if (request.getParameter("itemname")!=null && request.getParameter("itemprice")!=null) {
             u.addOrder(new Order(new Item(request.getParameter("itemname"),
                     Integer.parseInt(request.getParameter("itemprice")))));
             request.getSession().setAttribute("user",u);
-
         }
 
-        pageContent.append("Your orders list:<br/>");
         if(u.getNumberOfOrders()>0) {
+            pageContent.append("Your orders list:<br/>");
             pageContent.append("<ul>");
             for(Order o:u.getOrders()) {
                 pageContent.append("<li>"+o.getItem().getItemName()+", "+o.getItem().getItemPrice()+"$</li>");
             }
-            pageContent.append("</ul><br/>");
+            pageContent.append("</ul><br>");
         } else {
             pageContent.append("You have no orders yet.<br/>");
         }
@@ -57,9 +52,9 @@ public class ShopServlet extends javax.servlet.http.HttpServlet {
             pageContent.append("<tr>"+item.prepareDataForWebTable());
             pageContent.append("<td><a href=\"/shop?itemname="+item.getItemName()+
                     "&itemprice="+item.getItemPrice()+"\">"+
-                    "<img src=\"btnBuy2.png\"></td></tr>");
+                    "<img src=\"btnBuy3.png\"></td></tr>");
         }
         pageContent.append("</table>");
-        out.print(PagesGenerator.getPage("JavaWebShop",pageContent.toString()));
+        out.print(PagesGenerator.getComplexPage("JavaWebShop",pageContent.toString()));
     }
 }

@@ -7,7 +7,7 @@ public abstract class DAOFactory {
     public static final int QL = 1;
     public static final int HIBERNATE = 2;
 
-    public abstract UserDAO getUserDAO();
+    public abstract ClientDAO getUserDAO();
     public abstract ItemDAO getItemDAO();
     public abstract OrderDAO getOrderDAO();
 
@@ -16,7 +16,7 @@ public abstract class DAOFactory {
             case QL:
                 return new QlDAOFactory();
             case HIBERNATE:
-                return new HibernateDAOFactory();
+                return new HnDAOFactory();
             default:
                 return null;
         }

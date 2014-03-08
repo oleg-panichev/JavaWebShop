@@ -5,7 +5,7 @@ on database directory D:\Dropbox\Java\JavaWebShop\db with class loader sun.misc.
 Loaded from file:/C:/Users/Oleg/.IntelliJIdea13/config/jdbc-drivers/derby-10.10.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.7.0_45-b18
-user.dir=D:\Dropbox\Java\JavaWebShop
+client.dir=D:\Dropbox\Java\JavaWebShop
 os.name=Windows 7
 os.arch=amd64
 os.version=6.1

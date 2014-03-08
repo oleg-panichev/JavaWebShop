@@ -8,7 +8,7 @@ import javax.persistence.Persistence;
  * Created by Oleg on 08.03.14.
  */
 public class EntityManagerSingleton {
-    private static final String UNIT_NAME="PUnit2";
+    private static final String UNIT_NAME="PUnit";
     private static EntityManagerFactory factory;
     private static EntityManager em=null;
     private static EntityManagerSingleton ourInstance = new EntityManagerSingleton();

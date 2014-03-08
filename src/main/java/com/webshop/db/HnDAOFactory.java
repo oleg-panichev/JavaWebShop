@@ -5,16 +5,16 @@ import javax.persistence.EntityManager;
 /**
  * Created by Oleg on 08.03.14.
  */
-public class HibernateDAOFactory extends DAOFactory {
+public class HnDAOFactory extends DAOFactory {
     private EntityManager em;
 
-    public HibernateDAOFactory() {
+    public HnDAOFactory() {
         this.em=EntityManagerSingleton.getEMs();
     }
 
     @Override
-    public UserDAO getUserDAO() {
-        return null;
+    public ClientDAO getUserDAO() {
+        return new ClientDAOhn(em);
     }
 
     @Override

@@ -9,10 +9,11 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int orderId;
+    @OneToOne
     Item item;
     @ManyToOne
-    @JoinColumn(name="userId")
-    User user;
+    @JoinColumn(name="clientId")
+    Client client;
 
     public Order(Item item) {
         this.item = item;
@@ -24,6 +25,6 @@ public class Order {
     public Item getItem() { return item; }
     public void setItem(Item item) { this.item = item; }
 
-    public User getUser() { return user; }
-    public void setUser(User user) { this.user = user; }
+    public Client getClient() { return client; }
+    public void setClient(Client client) { this.client = client; }
 }
