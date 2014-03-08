@@ -1,4 +1,6 @@
-package com.webshop;
+package com.webshop.db;
+
+import com.webshop.Item;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,14 +12,29 @@ import java.util.List;
 /**
  * Created by Oleg on 28.02.14.
  */
-public class GoodsDBAO {
+public class ItemDAOdb implements ItemDAO{
     private Connection con;
 
-    public GoodsDBAO(Connection con) {
+    public ItemDAOdb(Connection con) {
         this.con=con;
     }
 
-    public List<Item> getAllGoods() {
+    @Override
+    public void addItem(Item i) {
+
+    }
+
+    @Override
+    public void updateItem(Item i) {
+
+    }
+
+    @Override
+    public Item getItem(int itemId) {
+        return null;
+    }
+
+    public List<Item> getAllItems() {
         List<Item> itemList=new ArrayList<Item>();
         try {
             PreparedStatement stmt=con.prepareStatement("SELECT itemname,itemprice FROM goods");
@@ -30,5 +47,10 @@ public class GoodsDBAO {
             e.printStackTrace();
         }
         return itemList;
+    }
+
+    @Override
+    public void removeItem(Item i) {
+
     }
 }

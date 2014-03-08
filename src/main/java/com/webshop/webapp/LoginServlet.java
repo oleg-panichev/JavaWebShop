@@ -1,4 +1,7 @@
-package com.webshop;
+package com.webshop.webapp;
+
+import com.webshop.User;
+import com.webshop.db.UserDAOdb;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -40,11 +43,11 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                 out.print(PagesGenerator.getErrorPage(e.toString()));
             }
             if (con!=null) {
-                UsersDBAO uDao=new UsersDBAO(con);
-                User u=uDao.findUser(login);
+                UserDAOdb uDao=new UserDAOdb(con);
+                User u=uDao.getUser(login);
                 if (u==null) {
                     if (pass.length()>=3) {
-                        uDao.addUser(login, pass);
+                        uDao.addUser(new User(login, pass));
                         u=new User(login, pass);
                         HttpSession session = request.getSession(true);
                         session.setAttribute("user",u);

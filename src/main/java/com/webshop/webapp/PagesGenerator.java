@@ -1,4 +1,4 @@
-package com.webshop;
+package com.webshop.webapp;
 
 /**
  * Created by Oleg on 28.02.14.

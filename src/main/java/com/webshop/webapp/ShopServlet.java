@@ -1,4 +1,8 @@
-package com.webshop;
+package com.webshop.webapp;
+
+import com.webshop.Item;
+import com.webshop.User;
+import com.webshop.db.ItemDAOdb;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -43,7 +47,7 @@ public class ShopServlet extends javax.servlet.http.HttpServlet {
         try {
             Connection con= DriverManager.getConnection("jdbc:derby:D:\\Dropbox\\Java\\JavaWebShop\\db");
             pageContent.append("<br/>Our products:<br/><table border=\"1\">");
-            GoodsDBAO gdbao=new GoodsDBAO(con);
+            ItemDAOdb gdbao=new ItemDAOdb(con);
             List<Item> itemList=gdbao.getAllGoods();
             for(Item item:itemList) {
                 pageContent.append("<tr>"+item.prepareDataForWebTable());
