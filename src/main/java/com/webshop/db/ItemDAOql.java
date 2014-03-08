@@ -12,10 +12,10 @@ import java.util.List;
 /**
  * Created by Oleg on 28.02.14.
  */
-public class ItemDAOdb implements ItemDAO{
+public class ItemDAOql implements ItemDAO{
     private Connection con;
 
-    public ItemDAOdb(Connection con) {
+    public ItemDAOql(Connection con) {
         this.con=con;
     }
 

@@ -7,10 +7,10 @@ import java.sql.Connection;
 /**
  * Created by Oleg on 08.03.14.
  */
-public class OrderDAOdb implements OrderDAO {
+public class OrderDAOql implements OrderDAO {
     private Connection con;
 
-    public OrderDAOdb(Connection con) {
+    public OrderDAOql(Connection con) {
         this.con=con;
     }
 

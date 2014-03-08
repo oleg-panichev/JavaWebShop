@@ -9,7 +9,7 @@ public class HibernateDAOFactory extends DAOFactory {
     private EntityManager em;
 
     public HibernateDAOFactory() {
-        this.em= EntityManagerSingleton.getEMs();
+        this.em=EntityManagerSingleton.getEMs();
     }
 
     @Override

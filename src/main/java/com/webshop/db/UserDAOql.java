@@ -10,19 +10,21 @@ import java.sql.SQLException;
 /**
  * Created by Oleg on 26.02.14.
  */
-public class UserDAOdb implements UserDAO {
+public class UserDAOql implements UserDAO {
     private Connection con;
     private PreparedStatement stmt;
+    private static final String addUser="INSERT INTO users (login,password) VALUES (?,?)";
+    private static final String getUserById="SELECT login,password FROM users WHERE id=?";
+    private static final String getUserByLogin="SELECT login,password FROM users WHERE id=?";
 
-    public UserDAOdb(Connection con) {
+    public UserDAOql(Connection con) {
         this.con=con;
     }
 
     @Override
     public void addUser(User u) {
         try {
-            stmt=con.prepareStatement("INSERT INTO users (login,password)" +
-                    "VALUES (?,?)");
+            stmt=con.prepareStatement(addUser);
             stmt.setString(1,u.getLogin());
             stmt.setString(2,u.getPass());
             stmt.executeUpdate();
@@ -40,7 +42,7 @@ public class UserDAOdb implements UserDAO {
     public User getUser(int id) {
         User u=null;
         try {
-            stmt=con.prepareStatement("SELECT login,password FROM users WHERE id=?");
+            stmt=con.prepareStatement(getUserById);
             stmt.setInt(1, id);
             ResultSet rs=stmt.executeQuery();
             while(rs.next()) {
@@ -57,7 +59,7 @@ public class UserDAOdb implements UserDAO {
     public User getUser(String login) {
         User u=null;
         try {
-            stmt=con.prepareStatement("SELECT login,password FROM users WHERE id=?");
+            stmt=con.prepareStatement(getUserByLogin);
             stmt.setString(1, login);
             ResultSet rs=stmt.executeQuery();
             while(rs.next()) {

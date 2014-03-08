@@ -1,8 +1,12 @@
 package com.webshop.webapp;
 
 import com.webshop.Item;
+import com.webshop.Order;
 import com.webshop.User;
-import com.webshop.db.ItemDAOdb;
+import com.webshop.db.DAOFactory;
+import com.webshop.db.ItemDAO;
+import com.webshop.db.ItemDAOql;
+import com.webshop.db.UserDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -18,6 +22,8 @@ import java.util.List;
  * Created by Oleg on 28.02.14.
  */
 public class ShopServlet extends javax.servlet.http.HttpServlet {
+    ItemDAO idao = DAOFactory.getDAOFactory(DAOFactory.QL).getItemDAO();
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -28,38 +34,32 @@ public class ShopServlet extends javax.servlet.http.HttpServlet {
         pageContent.append("<form action=\"/index.jsp\"><input type=\"submit\" value=\"Exit\"/></form><br/>");
 
         if (request.getParameter("itemname")!=null && request.getParameter("itemprice")!=null) {
-            u.addOrder(new Item(request.getParameter("itemname"),
-                    Integer.parseInt(request.getParameter("itemprice"))));
+            u.addOrder(new Order(new Item(request.getParameter("itemname"),
+                    Integer.parseInt(request.getParameter("itemprice")))));
             request.getSession().setAttribute("user",u);
+
         }
 
         pageContent.append("Your orders list:<br/>");
         if(u.getNumberOfOrders()>0) {
             pageContent.append("<ul>");
-            for(Item o:u.getOrders()) {
-                pageContent.append("<li>"+o.getItemName()+", "+o.getItemPrice()+"$</li>");
+            for(Order o:u.getOrders()) {
+                pageContent.append("<li>"+o.getItem().getItemName()+", "+o.getItem().getItemPrice()+"$</li>");
             }
             pageContent.append("</ul><br/>");
         } else {
             pageContent.append("You have no orders yet.<br/>");
         }
 
-        try {
-            Connection con= DriverManager.getConnection("jdbc:derby:D:\\Dropbox\\Java\\JavaWebShop\\db");
-            pageContent.append("<br/>Our products:<br/><table border=\"1\">");
-            ItemDAOdb gdbao=new ItemDAOdb(con);
-            List<Item> itemList=gdbao.getAllGoods();
-            for(Item item:itemList) {
-                pageContent.append("<tr>"+item.prepareDataForWebTable());
-                pageContent.append("<td><form action=\"/shop?itemname="+item.getItemName()+
-                        "&itemprice="+item.getItemPrice()+"\" method=\"GET\">"+
-                        "<input type=\"submit\" value=\"Buy\"/></form></td></tr>");
-            }
-            pageContent.append("</table>");
-
-        } catch (SQLException e) {
-            pageContent.append("<h2><font color=red>Error</h2></font><br/>" + e.toString() + "<br/>");
+        pageContent.append("<br/>Our products:<br/><table border=\"1\">");
+        List<Item> itemList=idao.getAllItems();
+        for(Item item:itemList) {
+            pageContent.append("<tr>"+item.prepareDataForWebTable());
+            pageContent.append("<td><a href=\"/shop?itemname="+item.getItemName()+
+                    "&itemprice="+item.getItemPrice()+"\">"+
+                    "<img src=\"btnBuy2.png\"></td></tr>");
         }
+        pageContent.append("</table>");
         out.print(PagesGenerator.getPage("JavaWebShop",pageContent.toString()));
     }
 }

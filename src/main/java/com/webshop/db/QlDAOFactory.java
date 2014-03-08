@@ -14,16 +14,16 @@ public class QlDAOFactory extends DAOFactory {
 
     @Override
     public UserDAO getUserDAO() {
-        return new UserDAOdb(con);
+        return new UserDAOql(con);
     }
 
     @Override
     public ItemDAO getItemDAO() {
-        return new ItemDAOdb(con);
+        return new ItemDAOql(con);
     }
 
     @Override
     public OrderDAO getOrderDAO() {
-        return new OrderDAOdb(con);
+        return new OrderDAOql(con);
     }
 }
