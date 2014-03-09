@@ -37,7 +37,7 @@ public class ItemDAOql implements ItemDAO{
     public List<Item> getAllItems() {
         List<Item> itemList=new ArrayList<Item>();
         try {
-            PreparedStatement stmt=con.prepareStatement("SELECT itemname,itemprice FROM goods");
+            PreparedStatement stmt=con.prepareStatement("SELECT itemname,itemprice FROM item");
             ResultSet rs=stmt.executeQuery();
             while(rs.next()) {
                 itemList.add(new Item(rs.getString("itemname"),rs.getInt("itemprice")));

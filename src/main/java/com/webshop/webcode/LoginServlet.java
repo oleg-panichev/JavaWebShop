@@ -27,11 +27,12 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                 pass.contains("<") || pass.contains(">") || pass.contains("\"") || pass.contains("'")) {
             out.print(PagesGenerator.getErrorPage("Login and password cannot contain \",<,>,' symbols."));
         } else {
-            Client u=udao.getUser(login);
+            Client u=udao.getClient(login);
             if (u==null) {
                 if (pass.length()>=3) {
-                    udao.addUser(new Client(login, pass));
+                    udao.addClient(new Client(login, pass));
                     u=new Client(login, pass);
+                    u.setClientStatus(3);
                     HttpSession session = request.getSession(true);
                     session.setAttribute("user",u);
                     response.sendRedirect("/shop");

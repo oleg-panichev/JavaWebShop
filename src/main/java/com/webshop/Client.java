@@ -13,7 +13,7 @@ import java.util.List;
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int userId;
+    private int clientId;
     private String login;
     private String pass;
     private int clientStatus;
@@ -21,7 +21,13 @@ public class Client {
     private static final int STATUS_MODERATOR=2;
     private static final int STATUS_USER=3;
     @OneToMany(mappedBy = "client")
-    private List<Order> orders=new ArrayList<Order>();
+    private List<Item> orders=new ArrayList<Item>();
+
+    public Client(String login, String pass, int clientStatus) {
+        this.login = login;
+        this.pass = pass;
+        this.clientStatus = clientStatus;
+    }
 
     public Client(String login, String pass) {
         this.login=login;
@@ -29,8 +35,8 @@ public class Client {
         this.clientStatus=STATUS_USER;
     }
 
-    public int getUserId() { return userId; }
-    public void setUserId(int userId) { this.userId = userId; }
+    public int getClientId() { return clientId; }
+    public void setClientId(int clientId) { this.clientId = clientId; }
 
     public String getLogin() {
         return login;
@@ -46,13 +52,13 @@ public class Client {
         this.pass = pass;
     }
 
-    public int getUserStatus() { return clientStatus; }
-    public void setUserStatus(int userStatus) { this.clientStatus = userStatus; }
+    public int getClientStatus() { return clientStatus; }
+    public void setClientStatus(int userStatus) { this.clientStatus = userStatus; }
 
-    public List<Order> getOrders() {
+    public List<Item> getOrders() {
         return orders;
     }
-    public void setOrders(List<Order> orders) {
+    public void setOrders(List<Item> orders) {
         this.orders = orders;
     }
 
@@ -63,8 +69,8 @@ public class Client {
             return false;
     }
 
-    public void addOrder(Order o) {
-        orders.add(o);
+    public void addOrder(Item i) {
+        orders.add(i);
     }
 
     public int getNumberOfOrders() {

@@ -30,16 +30,16 @@ public class ShopServlet extends javax.servlet.http.HttpServlet {
 //        pageContent.append("<form action=\"/logout\"><input type=\"submit\" value=\"Exit\"/></form><br/>");
 
         if (request.getParameter("itemname")!=null && request.getParameter("itemprice")!=null) {
-            u.addOrder(new Order(new Item(request.getParameter("itemname"),
-                    Integer.parseInt(request.getParameter("itemprice")))));
+            u.addOrder(new Item(request.getParameter("itemname"),
+                    Integer.parseInt(request.getParameter("itemprice"))));
             request.getSession().setAttribute("user",u);
         }
 
         if(u.getNumberOfOrders()>0) {
-            pageContent.append("Your orders list:<br/>");
+            pageContent.append("<b>Your orders list:</b><br/>");
             pageContent.append("<ul>");
-            for(Order o:u.getOrders()) {
-                pageContent.append("<li>"+o.getItem().getItemName()+", "+o.getItem().getItemPrice()+"$</li>");
+            for(Item i:u.getOrders()) {
+                pageContent.append("<li>"+i.getItemName()+", "+i.getItemPrice()+"$</li>");
             }
             pageContent.append("</ul><br>");
         } else {
