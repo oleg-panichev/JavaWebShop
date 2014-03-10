@@ -22,8 +22,8 @@ public class HnDAOFactory extends DAOFactory {
         return new ItemDAOhn(em);
     }
 
-    @Override
-    public OrderDAO getOrderDAO() {
-        return null;
-    }
+//    @Override
+//    public OrderDAO getOrderDAO() {
+//        return null;
+//    }
 }

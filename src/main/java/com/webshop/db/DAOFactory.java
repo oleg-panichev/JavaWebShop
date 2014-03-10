@@ -9,7 +9,7 @@ public abstract class DAOFactory {
 
     public abstract ClientDAO getClientDAO();
     public abstract ItemDAO getItemDAO();
-    public abstract OrderDAO getOrderDAO();
+//    public abstract OrderDAO getOrderDAO();
 
     public static DAOFactory getDAOFactory(int factoryType) {
         switch (factoryType) {

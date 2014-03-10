@@ -4,7 +4,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>com.webshop.Client</class>
         <class>com.webshop.Item</class>
-        <class>com.webshop.Order</class>
+        <!--<class>com.webshop.Order</class>-->
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyTenSevenDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
