@@ -1,8 +1,11 @@
 package com.webshop.db;
 
 import com.webshop.Client;
+import com.webshop.Item;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
+import java.util.List;
 
 /**
  * Created by Oleg on 08.03.14.
@@ -29,13 +32,14 @@ public class ClientDAOhn implements ClientDAO {
     }
 
     @Override
-    public Client getClient(int id) {
-        return em.find(Client.class,id);
+    public Client getClient(int clientId) {
+        return em.find(Client.class,clientId);
     }
 
     @Override
     public Client getClient(String login) {
-        return em.find(Client.class,login);
+        Query query = em.createQuery("SELECT c FROM Client c WHERE login="+login);
+        return (Client) query.getSingleResult();
     }
 
     @Override

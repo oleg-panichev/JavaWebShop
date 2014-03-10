@@ -41,11 +41,11 @@ public class ClientDAOql implements ClientDAO {
     }
 
     @Override
-    public Client getClient(int id) {
+    public Client getClient(int clientId) {
         Client c=null;
         try {
             stmt=con.prepareStatement(getUserById);
-            stmt.setInt(1, id);
+            stmt.setInt(1, clientId);
             ResultSet rs=stmt.executeQuery();
             while(rs.next()) {
                 c=new Client(rs.getString("login"),rs.getString("password"));

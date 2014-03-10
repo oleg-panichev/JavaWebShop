@@ -7,7 +7,7 @@ public abstract class DAOFactory {
     public static final int QL = 1;
     public static final int HIBERNATE = 2;
 
-    public abstract ClientDAO getUserDAO();
+    public abstract ClientDAO getClientDAO();
     public abstract ItemDAO getItemDAO();
     public abstract OrderDAO getOrderDAO();
 

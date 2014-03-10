@@ -10,7 +10,7 @@
             <property name="hibernate.hbm2ddl.auto" value="update"/>
 
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:derby:D:\Dropbox\Java\JavaWebShop\WebShopUsers"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby:D:/Dropbox/Java/JavaWebShop/db"/>
         </properties>
     </persistence-unit>
 </persistence>

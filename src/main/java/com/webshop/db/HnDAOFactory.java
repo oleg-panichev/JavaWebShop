@@ -13,13 +13,13 @@ public class HnDAOFactory extends DAOFactory {
     }
 
     @Override
-    public ClientDAO getUserDAO() {
+    public ClientDAO getClientDAO() {
         return new ClientDAOhn(em);
     }
 
     @Override
     public ItemDAO getItemDAO() {
-        return null;
+        return new ItemDAOhn(em);
     }
 
     @Override

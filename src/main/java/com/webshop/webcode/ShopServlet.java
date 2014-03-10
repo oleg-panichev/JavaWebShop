@@ -1,7 +1,6 @@
 package com.webshop.webcode;
 
 import com.webshop.Item;
-import com.webshop.Order;
 import com.webshop.Client;
 import com.webshop.db.DAOFactory;
 import com.webshop.db.ItemDAO;
@@ -17,7 +16,7 @@ import java.util.List;
  * Created by Oleg on 28.02.14.
  */
 public class ShopServlet extends javax.servlet.http.HttpServlet {
-    ItemDAO idao = DAOFactory.getDAOFactory(DAOFactory.QL).getItemDAO();
+    ItemDAO itemDAO = DAOFactory.getDAOFactory(DAOFactory.HIBERNATE).getItemDAO();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -47,7 +46,7 @@ public class ShopServlet extends javax.servlet.http.HttpServlet {
         }
 
         pageContent.append("<br/>Our products:<br/><table border=\"1\">");
-        List<Item> itemList=idao.getAllItems();
+        List<Item> itemList= itemDAO.getAllItems();
         for(Item item:itemList) {
             pageContent.append("<tr>"+item.prepareDataForWebTable());
             pageContent.append("<td><a href=\"/shop?itemname="+item.getItemName()+

@@ -1,5 +1,6 @@
 package com.webshop;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -7,6 +8,7 @@ import javax.persistence.Id;
 /**
  * Created by Oleg on 28.02.14.
  */
+@Entity
 public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,6 +16,8 @@ public class Item {
     private String itemName;
     private int itemPrice;
 
+    public Item() {
+    }
 
     public Item(String itemName, int itemPrice) {
         this.itemName=itemName;

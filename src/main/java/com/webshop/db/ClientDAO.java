@@ -8,7 +8,7 @@ import com.webshop.Client;
 public interface ClientDAO {
     public void addClient(Client c);
     public void updateClient(Client c);
-    public Client getClient(int id);
+    public Client getClient(int clientId);
     public Client getClient(String login);
     public void removeClient(Client c);
 }

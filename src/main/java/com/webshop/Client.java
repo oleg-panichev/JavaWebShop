@@ -1,15 +1,13 @@
 package com.webshop;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Oleg on 25.02.14.
  */
+@Entity
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,6 +20,9 @@ public class Client {
     private static final int STATUS_USER=3;
     @OneToMany(mappedBy = "client")
     private List<Item> orders=new ArrayList<Item>();
+
+    public Client() {
+    }
 
     public Client(String login, String pass, int clientStatus) {
         this.login = login;

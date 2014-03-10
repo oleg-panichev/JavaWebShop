@@ -13,7 +13,7 @@ public class QlDAOFactory extends DAOFactory {
     }
 
     @Override
-    public ClientDAO getUserDAO() {
+    public ClientDAO getClientDAO() {
         return new ClientDAOql(con);
     }
 
