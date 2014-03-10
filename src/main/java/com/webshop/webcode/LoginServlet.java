@@ -15,7 +15,7 @@ import java.io.PrintWriter;
  * Created by Oleg on 25.02.14.
  */
 public class LoginServlet extends javax.servlet.http.HttpServlet {
-    ClientDAO clientDAO = DAOFactory.getDAOFactory(DAOFactory.HIBERNATE).getClientDAO();
+    ClientDAO clientDAO = DAOFactory.getDAOFactory(DAOFactory.QL).getClientDAO();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,7 +27,7 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                 pass.contains("<") || pass.contains(">") || pass.contains("\"") || pass.contains("'")) {
             out.print(PagesGenerator.getErrorPage("Login and password cannot contain \",<,>,' symbols."));
         } else {
-            Client u= clientDAO.getClient(login);
+            Client u=clientDAO.getClient(login);
             if (u==null) {
                 if (pass.length()>=3) {
                     clientDAO.addClient(new Client(login, pass));
