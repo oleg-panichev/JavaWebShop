@@ -26,7 +26,10 @@ public class ClientDAOql implements ClientDAO {
             stmt.setString(1,c.getLogin());
             stmt.setString(2,c.getPass());
             stmt.setInt(3,c.getClientStatus());
-            stmt.executeUpdate();
+            int affectedRows = stmt.executeUpdate();
+            if (affectedRows == 0) {
+                throw new SQLException("Creating user failed, no rows affected.");
+            }
             stmt.close();
         } catch (SQLException e) {
             e.printStackTrace();
