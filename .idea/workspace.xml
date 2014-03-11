@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e391a02b-32a7-4a93-9656-0d45c7b03741" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/webshop/db/ClientDAOql.java" afterPath="$PROJECT_DIR$/src/main/java/com/webshop/db/ClientDAOql.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/db.lck" afterPath="$PROJECT_DIR$/db/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaWebShop.iws" />
@@ -80,7 +78,7 @@
       <file leaf-file-name="ClientDAOql.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/db/ClientDAOql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="5" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.6970509" vertical-offset="318" max-vertical-offset="1700">
+            <state line="32" column="25" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.5147453" vertical-offset="318" max-vertical-offset="1700">
               <folding>
                 <marker date="1394567950484" expanded="true" signature="268:327" placeholder="INSERT INTO ..." />
                 <marker date="1394567950484" expanded="true" signature="376:440" placeholder="UPDATE clien..." />
@@ -954,7 +952,7 @@
       <workItem from="1394292713606" duration="21492000" />
       <workItem from="1394395673600" duration="1506000" />
       <workItem from="1394400229503" duration="12561000" />
-      <workItem from="1394565932152" duration="4331000" />
+      <workItem from="1394565932152" duration="4833000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1393364208801</created>
@@ -1032,11 +1030,15 @@
       <created>1394458911417</created>
       <updated>1394458911417</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Initial commit&#10;">
+      <created>1394579741167</created>
+      <updated>1394579741167</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94815000" />
+    <option name="totallyTimeSpent" value="95317000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1454,7 +1456,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webshop/db/ClientDAOql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.6970509" vertical-offset="318" max-vertical-offset="1700">
+        <state line="32" column="25" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.5147453" vertical-offset="318" max-vertical-offset="1700">
           <folding>
             <marker date="1394567950484" expanded="true" signature="268:327" placeholder="INSERT INTO ..." />
             <marker date="1394567950484" expanded="true" signature="376:440" placeholder="UPDATE clien..." />
