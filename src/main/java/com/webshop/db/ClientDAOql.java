@@ -10,7 +10,7 @@ import java.sql.*;
 public class ClientDAOql implements ClientDAO {
     private Connection con;
     private PreparedStatement stmt;
-    private static final String addClient="INSERT INTO client (login,pass,clientStatus) VALUES (?,?,?)";
+    private static final String addClient="INSERT INTO client (login,pass,clientStatus,clientId) VALUES (?,?,?,clientIdSeq.NEXTVAL)";
     private static final String updateClient="UPDATE client SET login=?,pass=?,clientStatus=? WHERE clientId=?";
     private static final String getUserById="SELECT clientId,login,pass,clientStatus FROM client WHERE clientId=?";
     private static final String getUserByLogin="SELECT clientId,login,pass,clientStatus FROM client WHERE login=?";
@@ -26,8 +26,14 @@ public class ClientDAOql implements ClientDAO {
             stmt.setString(1,c.getLogin());
             stmt.setString(2,c.getPass());
             stmt.setInt(3,c.getClientStatus());
-            int affectedRows = stmt.executeUpdate();
-            if (affectedRows == 0) {
+            stmt.executeUpdate();
+            ResultSet rs=stmt.getGeneratedKeys();
+            int id=-1;
+            if(rs.next())
+                id=rs.getInt(1);
+            if(id!=-1) {
+                c.setClientId(id);
+            } else {
                 throw new SQLException("Creating user failed, no rows affected.");
             }
             stmt.close();
@@ -43,7 +49,7 @@ public class ClientDAOql implements ClientDAO {
             stmt.setString(1,c.getLogin());
             stmt.setString(2,c.getPass());
             stmt.setInt(3,c.getClientStatus());
-            stmt.setInt(4,c.getClientId());
+            stmt.setLong(4,c.getClientId());
             stmt.executeUpdate();
             stmt.close();
         } catch (SQLException e) {

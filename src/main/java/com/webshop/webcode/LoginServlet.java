@@ -3,6 +3,7 @@ package com.webshop.webcode;
 import com.webshop.Client;
 import com.webshop.db.ClientDAO;
 import com.webshop.db.DAOFactory;
+import sun.misc.Cleaner;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -30,9 +31,9 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
             Client u=clientDAO.getClient(login);
             if (u==null) {
                 if (pass.length()>=3) {
-                    clientDAO.addClient(new Client(login, pass));
-                    u=new Client(login, pass);
-                    u.setClientStatus(3);
+                    u=new Client(login,pass);
+                    u.setClientStatus(Client.STATUS_USER);
+                    clientDAO.addClient(u);
                     HttpSession session = request.getSession(true);
                     session.setAttribute("user",u);
                     response.sendRedirect("/shop");

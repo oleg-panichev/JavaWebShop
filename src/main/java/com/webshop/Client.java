@@ -8,6 +8,7 @@ import java.util.List;
  * Created by Oleg on 25.02.14.
  */
 @Entity
+@Table(name="CLIENT")
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,9 +16,9 @@ public class Client {
     private String login;
     private String pass;
     private int clientStatus;
-    private static final int STATUS_ADMIN=1;
-    private static final int STATUS_MODERATOR=2;
-    private static final int STATUS_USER=3;
+    public static final int STATUS_ADMIN=1;
+    public static final int STATUS_MODERATOR=2;
+    public static final int STATUS_USER=3;
     @OneToMany(mappedBy = "client")
     private List<Item> orders=new ArrayList<Item>();
 
