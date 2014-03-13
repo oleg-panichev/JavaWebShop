@@ -10,7 +10,7 @@ import java.sql.*;
 public class ClientDAOql implements ClientDAO {
     private Connection con;
     private PreparedStatement stmt;
-    private static final String addClient="INSERT INTO client (login,pass,clientStatus,clientId) VALUES (?,?,?,clientIdSeq.NEXTVAL)";
+    private static final String addClient="INSERT INTO client (login,pass,clientStatus) VALUES (?,?,?)";
     private static final String updateClient="UPDATE client SET login=?,pass=?,clientStatus=? WHERE clientId=?";
     private static final String getUserById="SELECT clientId,login,pass,clientStatus FROM client WHERE clientId=?";
     private static final String getUserByLogin="SELECT clientId,login,pass,clientStatus FROM client WHERE login=?";

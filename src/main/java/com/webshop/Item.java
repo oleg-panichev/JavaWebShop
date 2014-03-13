@@ -1,20 +1,21 @@
 package com.webshop;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by Oleg on 28.02.14.
  */
 @Entity
+@Table(name="ITEM")
 public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int itemId;
     private String itemName;
     private int itemPrice;
+    @ManyToOne
+    @JoinColumn(name="clientId")
+    private Client client;
 
     public Item() {
     }

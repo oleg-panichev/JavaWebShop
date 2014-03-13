@@ -4,6 +4,7 @@ import com.webshop.Client;
 import com.webshop.Item;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.Query;
 import java.util.List;
 
@@ -38,8 +39,17 @@ public class ClientDAOhn implements ClientDAO {
 
     @Override
     public Client getClient(String login) {
-        Query query = em.createQuery("SELECT c FROM Client c WHERE login="+login);
-        return (Client) query.getSingleResult();
+        Client c=null;
+        String req="SELECT c FROM Client c WHERE login='"+login+"'";
+        try {
+            Query query = em.createQuery(req);
+            c=(Client)query.getSingleResult();
+        }
+        catch (NoResultException e)
+        {}
+        finally {
+            return c;
+        }
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.webshop;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -16,11 +17,15 @@ public class Client {
     private String login;
     private String pass;
     private int clientStatus;
-    public static final int STATUS_ADMIN=1;
-    public static final int STATUS_MODERATOR=2;
-    public static final int STATUS_USER=3;
     @OneToMany(mappedBy = "client")
-    private List<Item> orders=new ArrayList<Item>();
+    private Collection<Item> orders=new ArrayList<Item>();
+
+    @Transient
+    public static final int STATUS_ADMIN=1;
+    @Transient
+    public static final int STATUS_MODERATOR=2;
+    @Transient
+    public static final int STATUS_USER=3;
 
     public Client() {
     }
@@ -29,6 +34,7 @@ public class Client {
         this.login = login;
         this.pass = pass;
         this.clientStatus = clientStatus;
+//        this.orders
     }
 
     public Client(String login, String pass) {
@@ -57,7 +63,7 @@ public class Client {
     public int getClientStatus() { return clientStatus; }
     public void setClientStatus(int userStatus) { this.clientStatus = userStatus; }
 
-    public List<Item> getOrders() {
+    public Collection<Item> getOrders() {
         return orders;
     }
     public void setOrders(List<Item> orders) {

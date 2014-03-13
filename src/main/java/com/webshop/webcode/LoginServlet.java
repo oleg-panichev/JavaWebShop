@@ -16,7 +16,7 @@ import java.io.PrintWriter;
  * Created by Oleg on 25.02.14.
  */
 public class LoginServlet extends javax.servlet.http.HttpServlet {
-    ClientDAO clientDAO = DAOFactory.getDAOFactory(DAOFactory.QL).getClientDAO();
+    ClientDAO clientDAO = DAOFactory.getDAOFactory(DAOFactory.HIBERNATE).getClientDAO();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
