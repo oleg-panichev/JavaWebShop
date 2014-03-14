@@ -50,6 +50,11 @@ public class ItemDAOql implements ItemDAO{
     }
 
     @Override
+    public List<Item> getAvailableItems() {
+        return null;
+    }
+
+    @Override
     public void removeItem(Item i) {
 
     }

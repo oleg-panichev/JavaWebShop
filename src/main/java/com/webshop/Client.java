@@ -34,7 +34,6 @@ public class Client {
         this.login = login;
         this.pass = pass;
         this.clientStatus = clientStatus;
-//        this.orders
     }
 
     public Client(String login, String pass) {
@@ -79,6 +78,10 @@ public class Client {
 
     public void addOrder(Item i) {
         orders.add(i);
+    }
+
+    public void removeOrder(Item i) {
+        orders.remove(i);
     }
 
     public int getNumberOfOrders() {

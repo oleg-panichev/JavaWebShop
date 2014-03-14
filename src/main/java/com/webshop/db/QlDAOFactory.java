@@ -21,9 +21,4 @@ public class QlDAOFactory extends DAOFactory {
     public ItemDAO getItemDAO() {
         return new ItemDAOql(con);
     }
-
-//    @Override
-//    public OrderDAO getOrderDAO() {
-//        return new OrderDAOql(con);
-//    }
 }

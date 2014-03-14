@@ -24,13 +24,6 @@
       <primary-key name="SQL140313223054190" columns="CLIENTID"/>
       <exported-key name="FK_NVQRBKYP3CP3OTR8CEOETKAMI" table="ITEM" schema="APP" catalog="" columns="CLIENTID"/>
     </table>
-    <table name="CLIENTTEMP" schema="APP" catalog="" type="TABLE">
-      <column name="CLIENTID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="LOGIN" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
-      <column name="PASS" sqlType="VARCHAR" length="24" precision="0" nullable="false" jdbcType="12"/>
-      <column name="CLIENTSTATUS" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <primary-key name="SQL140309010357250" columns="CLIENTID"/>
-    </table>
     <table name="ITEM" schema="APP" catalog="" type="TABLE">
       <column name="ITEMID" sqlType="INTEGER" length="10" precision="0" nullable="false" jdbcType="4" def="R0VORVJBVEVEX0JZX0RFRkFVTFQ=" autoIncrement="true"/>
       <column name="ITEMNAME" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>

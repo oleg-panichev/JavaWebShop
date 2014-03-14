@@ -28,22 +28,22 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                 pass.contains("<") || pass.contains(">") || pass.contains("\"") || pass.contains("'")) {
             out.print(PagesGenerator.getErrorPage("Login and password cannot contain \",<,>,' symbols."));
         } else {
-            Client u=clientDAO.getClient(login);
-            if (u==null) {
+            Client client=clientDAO.getClient(login);
+            if (client==null) {
                 if (pass.length()>=3) {
-                    u=new Client(login,pass);
-                    u.setClientStatus(Client.STATUS_USER);
-                    clientDAO.addClient(u);
+                    client=new Client(login,pass);
+                    client.setClientStatus(Client.STATUS_USER);
+                    clientDAO.addClient(client);
                     HttpSession session = request.getSession(true);
-                    session.setAttribute("user",u);
+                    session.setAttribute("client",client);
                     response.sendRedirect("/shop");
                 } else {
                     out.print(PagesGenerator.getErrorPage("Password length cannot be less then 3 symbols!"));
                 }
             } else {
-                if (u.checkPass(pass)) {
+                if (client.checkPass(pass)) {
                     HttpSession session = request.getSession(true);
-                    session.setAttribute("user",u);
+                    session.setAttribute("client",client);
                     response.sendRedirect("/shop");
                 } else {
                     out.print(PagesGenerator.getErrorPage("Wrong password!"));

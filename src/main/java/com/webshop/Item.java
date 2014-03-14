@@ -36,8 +36,12 @@ public class Item {
     }
     public void setItemPrice(int itemPrice) { this.itemPrice = itemPrice; }
 
+    public Client getClient() { return client; }
+    public void setClient(Client client) { this.client = client; }
+    public void removeClient() { this.client=null; }
+
     public String prepareDataForWebTable() {
-        return ("<td>"+itemName+" </td><td>"+itemPrice+" </td>");
+        return ("<td>"+itemName+"</td><td>"+itemPrice+"$</td>");
     }
 
 }

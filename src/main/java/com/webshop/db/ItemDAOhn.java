@@ -4,7 +4,9 @@ import com.webshop.Client;
 import com.webshop.Item;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.Query;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -38,8 +40,30 @@ public class ItemDAOhn implements ItemDAO {
 
     @Override
     public List<Item> getAllItems() {
-        Query query = em.createQuery("SELECT i FROM Item i");
-        return (List<Item>) query.getResultList();
+        List<Item> items=new ArrayList<Item>();
+        try {
+            Query query = em.createQuery("SELECT i FROM Item i");
+            items=(List<Item>) query.getResultList();
+        }
+        catch (NoResultException e)
+        {}
+        finally {
+            return items;
+        }
+    }
+
+    @Override
+    public List<Item> getAvailableItems() {
+        List<Item> items=new ArrayList<Item>();
+        try {
+            Query query = em.createQuery("SELECT i FROM Item i WHERE clientId=NULL");
+            items=(List<Item>) query.getResultList();
+        }
+        catch (NoResultException e)
+        {}
+        finally {
+            return items;
+        }
     }
 
     @Override

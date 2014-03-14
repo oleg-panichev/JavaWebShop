@@ -8,22 +8,6 @@ public class PagesGenerator {
         StringBuilder page = new StringBuilder();
         page.append("<html><head><title>"+pageTitle+"</title>" +
                 "<link type=\"text/css\" rel=\"stylesheet\" href=\"/mainStyle.css\"></head>");
-        page.append("<body>"+content+"</body></html>");
-        return page.toString();
-    }
-
-    public static String getErrorPage(String content) {
-        StringBuilder page = new StringBuilder();
-        page.append("<html><head><title>Error</title>" +
-                "<link type=\"text/css\" rel=\"stylesheet\" href=\"/mainStyle.css\"></head>");
-        page.append("<body><h2><font color=red>Error!</font></h2><br/>"+content+"</body></html>");
-        return page.toString();
-    }
-
-    public static String getComplexPage(String pageTitle, String content) {
-        StringBuilder page = new StringBuilder();
-        page.append("<html><head><title>"+pageTitle+"</title>" +
-                "<link type=\"text/css\" rel=\"stylesheet\" href=\"/mainStyle.css\"></head>");
         page.append("<div id=\"bg\">"+
                 "<div id=\"outer\">\n"+
                 "<div id=\"header\">\n"+
@@ -45,5 +29,11 @@ public class PagesGenerator {
         return page.toString();
     }
 
-
+    public static String getErrorPage(String content) {
+        StringBuilder page = new StringBuilder();
+        page.append("<html><head><title>Error</title>" +
+                "<link type=\"text/css\" rel=\"stylesheet\" href=\"/mainStyle.css\"></head>");
+        page.append("<body><h2><font color=red>Error!</font></h2><br/>"+content+"</body></html>");
+        return page.toString();
+    }
 }

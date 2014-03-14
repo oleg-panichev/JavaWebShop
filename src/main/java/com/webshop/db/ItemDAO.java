@@ -12,5 +12,6 @@ public interface ItemDAO {
     public void updateItem(Item i);
     public Item getItem(int itemId);
     public List<Item> getAllItems();
+    public List<Item> getAvailableItems();
     public void removeItem(Item i);
 }
