@@ -1,9 +1,10 @@
-package com.webshop.webcode;
+package com.webshop.servlet;
 
-import com.webshop.Item;
-import com.webshop.Client;
-import com.webshop.db.DAOFactory;
-import com.webshop.db.ItemDAO;
+import com.webshop.entity.Item;
+import com.webshop.entity.Client;
+import com.webshop.dao.DAOFactory;
+import com.webshop.dao.ItemDAO;
+import com.webshop.webcode.PagesGenerator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

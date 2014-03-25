@@ -1,7 +1,6 @@
-package com.webshop.db;
+package com.webshop.dao;
 
-import com.webshop.Client;
-import com.webshop.Item;
+import com.webshop.entity.Item;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;

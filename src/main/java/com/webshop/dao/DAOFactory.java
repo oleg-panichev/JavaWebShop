@@ -1,4 +1,4 @@
-package com.webshop.db;
+package com.webshop.dao;
 
 /**
  * Created by Oleg on 08.03.14.

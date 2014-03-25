@@ -1,4 +1,4 @@
-package com.webshop;
+package com.webshop.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;

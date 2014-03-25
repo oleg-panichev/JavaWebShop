@@ -1,9 +1,9 @@
-package com.webshop.webcode;
+package com.webshop.servlet;
 
-import com.webshop.Client;
-import com.webshop.db.ClientDAO;
-import com.webshop.db.DAOFactory;
-import sun.misc.Cleaner;
+import com.webshop.entity.Client;
+import com.webshop.dao.ClientDAO;
+import com.webshop.dao.DAOFactory;
+import com.webshop.webcode.PagesGenerator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

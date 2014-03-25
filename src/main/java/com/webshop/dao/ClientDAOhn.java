@@ -1,12 +1,10 @@
-package com.webshop.db;
+package com.webshop.dao;
 
-import com.webshop.Client;
-import com.webshop.Item;
+import com.webshop.entity.Client;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
-import java.util.List;
 
 /**
  * Created by Oleg on 08.03.14.

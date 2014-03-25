@@ -1,6 +1,6 @@
-package com.webshop.db;
+package com.webshop.dao;
 
-import com.webshop.Client;
+import com.webshop.entity.Client;
 
 import java.sql.*;
 

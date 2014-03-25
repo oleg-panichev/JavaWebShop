@@ -5,15 +5,15 @@
     <display-name>Archetype Created Web Application</display-name>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.webshop.webcode.LoginServlet</servlet-class>
+        <servlet-class>com.webshop.servlet.LoginServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ShopServlet</servlet-name>
-        <servlet-class>com.webshop.webcode.ShopServlet</servlet-class>
+        <servlet-class>com.webshop.servlet.ShopServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LogoutServlet</servlet-name>
-        <servlet-class>com.webshop.webcode.LogoutServlet</servlet-class>
+        <servlet-class>com.webshop.servlet.LogoutServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>

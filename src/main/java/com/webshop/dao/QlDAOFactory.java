@@ -1,4 +1,6 @@
-package com.webshop.db;
+package com.webshop.dao;
+
+import com.webshop.db.ConnectionSingleton;
 
 import java.sql.Connection;
 
@@ -9,7 +11,7 @@ public class QlDAOFactory extends DAOFactory {
     private Connection con;
 
     public QlDAOFactory() {
-        this.con=ConnectionSingleton.getConnection();
+        this.con= ConnectionSingleton.getConnection();
     }
 
     @Override

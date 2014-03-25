@@ -1,4 +1,4 @@
-package com.webshop.webcode;
+package com.webshop.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

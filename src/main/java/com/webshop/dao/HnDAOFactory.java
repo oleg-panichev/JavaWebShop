@@ -1,4 +1,6 @@
-package com.webshop.db;
+package com.webshop.dao;
+
+import com.webshop.db.EntityManagerSingleton;
 
 import javax.persistence.EntityManager;
 
@@ -9,7 +11,7 @@ public class HnDAOFactory extends DAOFactory {
     private EntityManager em;
 
     public HnDAOFactory() {
-        this.em=EntityManagerSingleton.getEMs();
+        this.em= EntityManagerSingleton.getEMs();
     }
 
     @Override

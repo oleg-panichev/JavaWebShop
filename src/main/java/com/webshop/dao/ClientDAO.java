@@ -1,6 +1,6 @@
-package com.webshop.db;
+package com.webshop.dao;
 
-import com.webshop.Client;
+import com.webshop.entity.Client;
 
 /**
  * Created by Oleg on 08.03.14.

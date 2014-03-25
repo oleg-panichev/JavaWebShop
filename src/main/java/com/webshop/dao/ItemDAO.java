@@ -1,6 +1,6 @@
-package com.webshop.db;
+package com.webshop.dao;
 
-import com.webshop.Item;
+import com.webshop.entity.Item;
 
 import java.util.List;
 
