@@ -17,7 +17,7 @@ import java.util.List;
  * Created by Oleg on 28.02.14.
  */
 public class ShopServlet extends javax.servlet.http.HttpServlet {
-    ItemDAO itemDAO = DAOFactory.getDAOFactory(DAOFactory.HIBERNATE).getItemDAO();
+    ItemDAO itemDAO;// = DAOFactory.getDAOFactory(DAOFactory.HIBERNATE).getItemDAO();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
